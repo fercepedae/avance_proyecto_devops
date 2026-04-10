@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Instalando dependencias..."
+  build:
+    commands:
+      - echo "Ejecutando app..."
+      - python app.py
+artifacts:
+  files:
+    - '**/*'
