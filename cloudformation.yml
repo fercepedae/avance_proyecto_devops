@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Simple EC2 + S3 DevOps stack
+
+Resources:
+
+  DevBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: devops-bucket-demo-123456789
+
+  DevInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0c02fb55956c7d316
